@@ -1,5 +1,6 @@
 build_script:
   - set CIBW_SKIP=cp27-* cp33-* cp34-* cp35-*
+  - pip install cython
   - pip install cibuildwheel==0.9.4
   - cibuildwheel --output-dir wheelhouse
 artifacts:
